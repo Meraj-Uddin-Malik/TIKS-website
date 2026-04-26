@@ -31,7 +31,7 @@ const PillarsSection = () => {
           <span className="text-blue-600 dark:text-blue-400 font-black uppercase tracking-[0.3em] text-[10px] mb-4 block">
             The Foundation
           </span>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-slate-900 dark:text-white">
             Our Academic Pillars.
           </h2>
         </div>

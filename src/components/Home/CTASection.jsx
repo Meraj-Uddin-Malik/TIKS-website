@@ -19,21 +19,21 @@ const CTASection = ({ setPage }) => {
         </div>
 
         {/* 2. Massive Cinematic Typography */}
-        <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-slate-900 dark:text-white leading-[0.9]">
+        <h2 className="text-5xl md:text-7xl lg:text-6xl font-black tracking-tighter text-slate-900 dark:text-white leading-[0.9]">
           READY TO SHAPE <br className="hidden md:block"/>THE FUTURE?
         </h2>
 
         {/* 3. Supporting Subtext */}
-        <p className="text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-sm text-slate-500 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
           Applications for the Fall 2024 cohort are now open. Join the world's most innovative academic community.
         </p>
 
         {/* 4. Oversized Glowing Magnetic Button */}
-        <div className="flex justify-center pt-4">
+        <div className="flex justify-center pt-0">
           <MagneticButton 
             onClick={() => setPage("admissions")}
             // Added explicit sizing and a custom glow shadow
-            className="bg-blue-600 text-white text-lg px-12 py-6 shadow-[0_0_40px_rgba(37,99,235,0.4)] hover:shadow-[0_0_60px_rgba(37,99,235,0.6)] w-full md:w-auto"
+            className="bg-blue-600 text-white text-sm px-12 py-6 shadow-[0_0_40px_rgba(37,99,235,0.4)] hover:shadow-[0_0_60px_rgba(37,99,235,0.6)] w-full md:w-auto"
           >
             Begin Application
           </MagneticButton>
