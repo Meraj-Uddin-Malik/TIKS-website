@@ -1,6 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, Menu, X, Sun, Moon } from "lucide-react";
 
+
+
 const Header = ({
   page,
   setPage,

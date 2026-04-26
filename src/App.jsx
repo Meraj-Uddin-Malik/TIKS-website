@@ -11,7 +11,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Admissions from "./pages/Addmissions";
 import Curriculam from "./pages/Curriculam";
-// import Faculty from "./pages/Faculty";
+import Faculty from "./pages/Faculty";
+import Events from "./pages/Events";
 
 
 export default function App() {
@@ -72,6 +73,7 @@ export default function App() {
       case "admissions": return <Admissions setPage={setPage} />;
       case "curriculam": return <Curriculam setPage={setPage} />;
       case "faculty": return <Faculty setPage={setPage} />;
+      case "events": return <Events setPage={setPage} />;
       // case "contact": return <Contact setPage={setPage} />;
       default: return <Home setPage={setPage} />;
     }
