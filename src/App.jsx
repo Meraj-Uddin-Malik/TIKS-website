@@ -9,9 +9,10 @@ import Footer from "./components/layout/Footer";
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Admissions from "./pages/Addmission";
+import Admissions from "./pages/Addmissions";
 import Curriculam from "./pages/Curriculam";
-// import Contact from "./pages/Contact";
+// import Faculty from "./pages/Faculty";
+
 
 export default function App() {
   // --- Global State ---
@@ -70,7 +71,8 @@ export default function App() {
       case "about": return <About setPage={setPage} />;
       case "admissions": return <Admissions setPage={setPage} />;
       case "curriculam": return <Curriculam setPage={setPage} />;
-      case "contact": return <Contact setPage={setPage} />;
+      case "faculty": return <Faculty setPage={setPage} />;
+      // case "contact": return <Contact setPage={setPage} />;
       default: return <Home setPage={setPage} />;
     }
   };

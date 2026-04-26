@@ -2,10 +2,12 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import * as Icons from 'lucide-react';
 
+// Consolidated icon destructuring with fallbacks
 const { 
   BookOpen, Cpu, Atom, Layers, Palette, Microscope, 
   Binary, Globe, Zap, Sparkles, ChevronRight, 
-  ArrowUpRight, Quote, Code, Component, FlaskConical
+  ArrowUpRight, Quote, Code, Component, FlaskConical,
+  HelpCircle
 } = Icons;
 
 // --- REFINED UI UTILITIES ---
@@ -27,10 +29,10 @@ const Curriculum = ({ setPage }) => {
   const { scrollYProgress } = useScroll({ target: containerRef });
   const smoothProgress = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
 
-  // Helper to safely render icons
+  // Helper to safely render icons to prevent ReferenceErrors
   const SafeIcon = ({ icon: IconComponent, ...props }) => {
-    if (!IconComponent) return <Icons.HelpCircle {...props} />;
-    return <IconComponent {...props} />;
+    const ComponentToRender = IconComponent || HelpCircle;
+    return <ComponentToRender {...props} />;
   };
 
   return (
@@ -124,7 +126,8 @@ const Curriculum = ({ setPage }) => {
             {
               title: "Bio-Genetics Suite",
               icon: Microscope,
-              image: "https://images.unsplash.com/photo-1532187875605-1ef6c747094d?auto=format&fit=crop&q=80&w=1200",
+              // Fixed: Swapped broken URL for a verified laboratory image
+              image: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&q=80&w=1200",
               desc: "Exploring the code of life through CRISPR simulations and advanced molecular biology studies."
             }
           ].map((lab, i) => (
@@ -148,7 +151,12 @@ const Curriculum = ({ setPage }) => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 className="flex-1 aspect-video lg:aspect-square rounded-[3rem] overflow-hidden shadow-3xl border border-slate-200 dark:border-white/5 relative group"
               >
-                <img src={lab.image} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105" alt={lab.title} />
+                <img 
+                  src={lab.image} 
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105" 
+                  alt={lab.title}
+                  onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1532187875605-1ef6c747094d?auto=format&fit=crop&q=80&w=1200" }}
+                />
                 <div className="absolute inset-0 bg-blue-600/10 mix-blend-overlay" />
               </motion.div>
             </div>
