@@ -5,7 +5,7 @@ import MagneticButton from "./MagneticButton";
 
 const CTASection = ({ setPage }) => {
   return (
-    <section className="container mx-auto px-6 text-center pt-20 pb-32">
+    <section className="container mx-auto px-6 text-center pt-10 pb-22">
       <motion.div 
         initial={{ opacity: 0, scale: 0.9 }} 
         whileInView={{ opacity: 1, scale: 1 }} 
@@ -25,7 +25,7 @@ const CTASection = ({ setPage }) => {
 
         {/* 3. Supporting Subtext */}
         <p className="text-sm text-slate-500 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          Applications for the Fall 2024 cohort are now open. Join the world's most innovative academic community.
+          Applications for the Fall 2026 cohort are now open. Join the world's most innovative academic community.
         </p>
 
         {/* 4. Oversized Glowing Magnetic Button */}
