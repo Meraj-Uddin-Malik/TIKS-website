@@ -16,11 +16,11 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 font-black text-xl mb-4">
               <GiGraduateCap className="text-blue-600 text-2xl" />
-              EIA Nexus
+              TIKSchool
             </div>
 
             <p className="text-sm text-gray-500">
-              Excellence in education since 1995. Building future leaders.
+              Excellence in education since 2020. Building future leaders.
             </p>
 
             {/* SOCIAL */}
@@ -54,17 +54,17 @@ const Footer = () => {
 
               <li className="flex items-center gap-2">
                 <MdLocationOn className="text-blue-600" />
-                Nexus City Campus
+                TIKSchools City Campus
               </li>
 
               <li className="flex items-center gap-2">
                 <MdPhone className="text-blue-600" />
-                +1 000 000 EIA
+                +92 300 1234567
               </li>
 
               <li className="flex items-center gap-2">
                 <MdMail className="text-blue-600" />
-                support@eia.edu
+                support@tikschool.com
               </li>
 
             </ul>
@@ -74,7 +74,7 @@ const Footer = () => {
 
         {/* BOTTOM */}
         <div className="border-t pt-6 text-center text-xs text-gray-500">
-          © 2024 EIA Nexus. All rights reserved.
+          © 2026 TIKSchools. All rights reserved.
         </div>
 
       </div>

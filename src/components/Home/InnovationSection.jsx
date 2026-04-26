@@ -21,10 +21,10 @@ const InnovationSection = ({ setPage }) => {
           </h2>
 
           {/* FIX 4: Updated paragraph text colors */}
-          <p className="text-slate-500 dark:text-slate-400 text-lg md:text-lg leading-relaxed max-w-xl">
+          <p className="text-slate-500 dark:text-slate-400 text-lg md:text-sm leading-relaxed max-w-xl">
             Our state-of-the-art research facility allows students to engage
-            with Quantum Computing, Bio-Genetics, and Neural Robotics starting
-            from grade 9.
+            with Modern Computing, Programing, and Agentic Robotics starting
+            from grade 9 Inshallah.
           </p>
         </div>
       </BentoCard>
