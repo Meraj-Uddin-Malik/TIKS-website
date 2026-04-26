@@ -32,10 +32,9 @@ export default function App() {
     { id: 'about', label: 'Vision' },
     { id: 'admissions', label: 'Enroll' },
     { id: 'academics', label: 'Labs' },
-    { id: 'faculty', label: 'Guild' },
-    { id: 'events', label: 'Pulse' },
+    { id: 'faculty', label: 'Faculty' },
+    { id: 'events', label: 'Events' },
     { id: 'gallery', label: 'Gallery' },
-    { id: 'news', label: 'News' },
     { id: 'contact', label: 'Contact' },
     { id: 'portal', label: 'Portal', isAction: true },
   ];
@@ -68,10 +67,10 @@ export default function App() {
   const renderPage = () => {
     switch (page) {
       case "home": return <Home setPage={setPage} />;
-      // case "about": return <About setPage={setPage} />;
-      // case "admissions": return <Admissions setPage={setPage} />;
-      // case "academics": return <Academics setPage={setPage} />;
-      // case "contact": return <Contact setPage={setPage} />;
+      case "about": return <About setPage={setPage} />;
+      case "admissions": return <Admissions setPage={setPage} />;
+      case "academics": return <Academics setPage={setPage} />;
+      case "contact": return <Contact setPage={setPage} />;
       default: return <Home setPage={setPage} />;
     }
   };

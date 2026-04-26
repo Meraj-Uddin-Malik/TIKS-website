@@ -71,7 +71,7 @@ const Header = ({
               onClick={() => setPage("portal")}
               className="hidden md:flex px-6 py-2 bg-blue-600 text-white rounded-full font-black text-[10px] uppercase tracking-widest hover:scale-105 transition-transform"
             >
-              Nexus Portal
+              TIKS Portal
             </button>
 
             <button

@@ -6,6 +6,7 @@ import PillarsSection from "../components/Home/PillarsSection";
 import CampusSection from "../components/Home/CampusSection";
 import InnovationSection from "../components/Home/InnovationSection";
 import CTASection from "../components/Home/CTASection";
+import AboutPreview from "../components/Home/AboutPreview";
 
 const Home = ({ setPage }) => {
   return (
@@ -14,11 +15,15 @@ const Home = ({ setPage }) => {
       {/* HERO */}
       <HeroSection setPage={setPage} />
 
+
       {/* TICKER */}
       <ScrollingTicker />
 
       {/* STATS */}
       <StatsSection />
+
+       {/* TICKER */}
+      <AboutPreview />
 
       {/* PILLARS */}
       <PillarsSection />
