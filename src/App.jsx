@@ -9,7 +9,7 @@ import Footer from "./components/layout/Footer";
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-// import Admissions from "./pages/Admissions";
+import Admissions from "./pages/Addmission";
 // import Academics from "./pages/Academics";
 // import Contact from "./pages/Contact";
 
