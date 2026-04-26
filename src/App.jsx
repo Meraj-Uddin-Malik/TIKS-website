@@ -10,7 +10,7 @@ import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Admissions from "./pages/Addmission";
-// import Academics from "./pages/Academics";
+import Curriculam from "./pages/Curriculam";
 // import Contact from "./pages/Contact";
 
 export default function App() {
@@ -31,7 +31,7 @@ export default function App() {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'Vision' },
     { id: 'admissions', label: 'Enroll' },
-    { id: 'academics', label: 'Labs' },
+    { id: 'curriculam', label: 'Curriculum' },
     { id: 'faculty', label: 'Faculty' },
     { id: 'events', label: 'Events' },
     { id: 'gallery', label: 'Gallery' },
@@ -69,7 +69,7 @@ export default function App() {
       case "home": return <Home setPage={setPage} />;
       case "about": return <About setPage={setPage} />;
       case "admissions": return <Admissions setPage={setPage} />;
-      case "academics": return <Academics setPage={setPage} />;
+      case "curriculam": return <Curriculam setPage={setPage} />;
       case "contact": return <Contact setPage={setPage} />;
       default: return <Home setPage={setPage} />;
     }
