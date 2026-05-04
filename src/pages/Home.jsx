@@ -4,7 +4,7 @@ import ScrollingTicker from "../components/Home/ScrollingTicker";
 import StatsSection from "../components/Home/StatsSection";
 import PillarsSection from "../components/Home/PillarsSection";
 import CampusSection from "../components/Home/CampusSection";
-import InnovationSection from "../components/Home/InnovationSection";
+// import InnovationSection from "../components/Home/InnovationSection";
 import CTASection from "../components/Home/CTASection";
 import AboutPreview from "../components/Home/AboutPreview";
 
@@ -32,7 +32,7 @@ const Home = ({ setPage }) => {
       <CampusSection />
 
       {/* INNOVATION */}
-      <InnovationSection />
+      {/* <InnovationSection /> */}
 
       {/* CTA */}
       <CTASection setPage={setPage} />

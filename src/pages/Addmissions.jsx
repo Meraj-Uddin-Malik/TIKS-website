@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import * as Icons from 'lucide-react';
 
+import Principal from "../assets/principal.jpeg";
+
 // Safe destructuring of icons with fallbacks to avoid undefined errors
 const { 
   FileText, Cpu, UserPlus, ShieldCheck, ArrowUpRight, 
@@ -156,7 +158,7 @@ const Admissions = ({ setPage }) => {
           <div className="relative z-10 flex flex-col md:flex-row items-center gap-16">
             <div className="w-48 h-64 md:w-64 md:h-80 flex-shrink-0 rounded-[2.5rem] overflow-hidden border-4 border-white/20">
               <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600" 
+                src={Principal}
                 alt="Principal" 
                 className="w-full h-full object-cover grayscale"
               />

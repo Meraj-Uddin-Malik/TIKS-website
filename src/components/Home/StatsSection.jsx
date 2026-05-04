@@ -4,10 +4,10 @@ import { Users, Award, GraduationCap, Globe } from "lucide-react";
 
 const StatsSection = () => {
   const stats = [
-    { icon: Users, val: "2.5k+", label: "Elite Students" },
-    { icon: Award, val: "150+", label: "World Awards" },
-    { icon: GraduationCap, val: "98%", label: "Ivy Placement" },
-    { icon: Globe, val: "40+", label: "Global Partners" },
+    { icon: Users, val: "100+", label: "Elite Students" },
+    { icon: Award, val: "10+", label: "Awards" },
+    { icon: GraduationCap, val: "98%", label: "Nurishment" },
+    { icon: Globe, val: "10+", label: "Partners" },
   ];
 
   return (

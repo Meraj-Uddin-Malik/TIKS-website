@@ -5,7 +5,7 @@ const AboutPreview = () => (
       {/* Image */}
       <div className="relative rounded-3xl overflow-hidden shadow-2xl">
         <img 
-          src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=800" 
+          src="https://media.istockphoto.com/id/1462063082/photo/hispanic-school-children-enjoying-books-in-library.jpg?s=612x612&w=0&k=20&c=jVkcaGNr-Ga3wJzU8bIO9uFqAloP4paI7LRw2wrFRPM=" 
           alt="Students"
           className="w-full h-full object-cover"
         />
@@ -23,14 +23,14 @@ const AboutPreview = () => (
         </h2>
 
         <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-          Founded in 1995, Excellence International Academy has been at the forefront of modern education. 
+          Founded in 2026, TIKSchool has been at the forefront of modern education. 
           We combine traditional values with cutting-edge technology to provide a holistic learning experience.
         </p>
 
         <ul className="space-y-4">
           <li className="flex items-center gap-3">✔ Globally recognized curriculum</li>
-          <li className="flex items-center gap-3">✔ World-class laboratory facilities</li>
-          <li className="flex items-center gap-3">✔ Dedicated sports & arts programs</li>
+          <li className="flex items-center gap-3">✔ Educated and passionate faculty</li>
+          <li className="flex items-center gap-3">✔ Environmentally conscious campus</li>
         </ul>
       </div>
 
